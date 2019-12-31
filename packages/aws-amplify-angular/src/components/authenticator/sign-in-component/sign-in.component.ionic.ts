@@ -93,7 +93,7 @@ const template = `
 })
 export class SignInComponentIonic extends SignInComponentCore {
 	constructor(
-		@Inject(AmplifyService) protected amplifyService: AmplifyService
+		@Inject(AmplifyService) public amplifyService: AmplifyService
 	) {
 		super(amplifyService);
 	}

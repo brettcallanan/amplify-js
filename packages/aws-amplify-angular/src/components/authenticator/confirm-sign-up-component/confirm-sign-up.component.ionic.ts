@@ -112,7 +112,7 @@ const template = `
 })
 export class ConfirmSignUpComponentIonic extends ConfirmSignUpComponentCore {
 	constructor(
-		@Inject(AmplifyService) protected amplifyService: AmplifyService
+		@Inject(AmplifyService) public amplifyService: AmplifyService
 	) {
 		super(amplifyService);
 	}

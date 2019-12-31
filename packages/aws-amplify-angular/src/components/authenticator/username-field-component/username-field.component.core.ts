@@ -73,7 +73,7 @@ export class UsernameFieldComponentCore implements OnInit {
 	username: string;
 
 	constructor(
-		@Inject(AmplifyService) protected amplifyService: AmplifyService
+		@Inject(AmplifyService) public amplifyService: AmplifyService
 	) {
 		this.onPhoneFieldChanged = this.onPhoneFieldChanged.bind(this);
 	}

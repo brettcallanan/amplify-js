@@ -82,7 +82,7 @@ const template = `
 })
 export class RequireNewPasswordComponentIonic extends RequireNewPasswordComponentCore {
 	constructor(
-		@Inject(AmplifyService) protected amplifyService: AmplifyService
+		@Inject(AmplifyService) public amplifyService: AmplifyService
 	) {
 		super(amplifyService);
 	}

@@ -76,7 +76,7 @@ export class RequireNewPasswordComponentCore implements OnInit {
 	protected logger: any;
 
 	constructor(
-		@Inject(AmplifyService) protected amplifyService: AmplifyService
+		@Inject(AmplifyService) public amplifyService: AmplifyService
 	) {
 		this.logger = this.amplifyService.logger('RequireNewPasswordComponent');
 	}

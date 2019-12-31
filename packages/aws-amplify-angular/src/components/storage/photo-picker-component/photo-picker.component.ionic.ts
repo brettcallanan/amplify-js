@@ -58,7 +58,7 @@ const template = `
 })
 export class PhotoPickerIonicComponent extends PhotoPickerComponentCore {
 	constructor(
-		@Inject(AmplifyService) protected amplifyService: AmplifyService
+		@Inject(AmplifyService) public amplifyService: AmplifyService
 	) {
 		super(amplifyService);
 	}
