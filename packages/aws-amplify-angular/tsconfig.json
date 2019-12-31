@@ -16,10 +16,10 @@
     "outDir": "dist",
     "sourceMap": true,
     "inlineSources": true,
-    "target": "es5",
+    "target": "esnext",
     "skipLibCheck": true,
     "lib": [
-      "es2015", 
+      "es2015",
       "dom"
     ]
   },
@@ -28,6 +28,8 @@
     "src/components/interactions/chatbot/aws-lex-audio.js"
   ],
   "angularCompilerOptions": {
-    "strictMetadataEmit": true
+    "strictMetadataEmit": true,
+    "allowEmptyCodegenFiles": true,
+    "enableIvy": false
   }
 }
